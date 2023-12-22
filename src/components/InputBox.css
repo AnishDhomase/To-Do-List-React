@@ -1,0 +1,27 @@
+.inptBox{
+    font-size: 15px;
+    
+}
+.inptBox .btn{
+    outline: none;
+    border: none;
+    border: 1px solid rgb(71, 71, 121); 
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.inptBox input{
+    outline: none;
+    /* border: none; */
+    padding: 10px 20px;
+    width: 250px;
+    border: 1px solid rgb(71, 71, 121); 
+    border-radius: 5px 0 0 5px;
+}
+
+@media screen and (max-width:400px) {
+    .inptBox  input{
+        width: 190px;
+    }
+}

@@ -1,0 +1,73 @@
+
+.taskBar{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    animation: addAnim 1s ease;
+    transition: all 0.3s ease !important;
+    background-color: rgba(242, 255, 0, 0.202);
+}
+.taskBar:hover{
+    background-color: rgba(128, 128, 128, 0.12);
+    background-color: rgba(255, 153, 0, 0.193);
+    cursor: pointer;
+}
+.taskBar img{
+    width: 30px;
+}
+.taskBar input{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    max-width: 250px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.taskBar input::placeholder{
+    color: black;
+}
+
+.TaskBtn i{
+    font-size: 20px;
+    padding: 4px 7px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.TaskBtn i:hover{
+    background-color: #41487c32;
+}
+@media screen and (max-width:400px) {
+    .taskBar input{
+        width: 180px;
+    }
+}
+@media screen and (max-width:359px) {
+    .taskBar input{
+        padding: 10px 15px;
+        width: 160px;
+
+    }
+}
+.upAnimClass{
+    animation: upAnim 1s ease;
+}
+
+@keyframes addAnim{
+    0%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* @keyframes upAnim{
+    0%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: transparent;
+    }
+} */
